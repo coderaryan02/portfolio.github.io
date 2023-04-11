@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&display=swap');
+
+
+/*  font-family: 'Lobster', cursive; 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Lobster', cursive;   mota
+    font-family: 'Corinthia', cursive;   tedh
+    font-family: 'Oleo Script', cursive;  for head
+    font-family:  'Merriweather', serif;
+    font-family: 'Courgette', cursive; 
+    font-family: 'Lobster', cursive; 
+    font-family: 'Volkhov', serif; 
+ */
+
+
+body{
+	font-family: 'Libre Baskerville', serif;
+
+}
+.border{border: 1px solid red;}
+.pad0{padding: 0px;}
+.margin0{margin: 0px;}
+.clear{clear: both;}
+
+.header{
+	background-color: #022127;
+	padding:  10px 25px;
+	height: 100px;
+}
+.logo{
+	padding-left: 50px;
+}
+.logo img{
+	height: 80px;
+}
+.logo h1{
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	font-family: 'Lobster', cursive;
+	font-size: 2.8em;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.logo h1 span{
+	color: #18dcff;
+}
+.social{
+	height: 80px;
+}
+.social ul{
+	list-style: none;
+	text-align: right;
+	line-height: 80px;
+}
+.social ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+.social ul li a{
+	font-size: 1.7em;
+	text-decoration: none;
+	color: #fff;
+	transition: all ease .5s;
+}
+.social ul li a:hover{
+	color: blue;
+	font-size: 2em;
+}
+.introduction{
+	background-color:#000;
+	height: 400px;
+	overflow: hidden;
+}
+.info{
+	height: 400px;
+	padding: 80px;
+}
+.info span{
+	color: #0afff4;
+}
+.info h2{
+	font-size: 2em;
+	font-family: 'Lobster', cursive;
+	font-weight: 900;
+	color: #F8EFBA;
+}
+.info h1{
+	margin-top: 15px;
+	font-size: 3.5em;
+	font-family: 'Lobster', cursive;
+	font-weight: 900;
+	color: #ccffea;
+}
+.wrapper{
+	display: inline-flex;
+}
+.wrapper h3{
+	font-size: 3em;
+	font-family: 'Lobster', cursive;
+	font-weight: 900;
+	color: #F8EFBA;
+}
+.wrapper .auto_text{
+	margin-top: 15px;
+	margin-left: 15px;
+	list-style: none;
+	padding: 0px;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	position: relative;
+}
+
+.wrapper .auto_text li{	
+	padding: 0px;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	top: 0;
+	animation-name: slide;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(4);
+	
+}
+.wrapper .auto_text li span{
+	font-size: 3em;
+	font-weight: 900;
+	font-family:'Lobster', cursive;
+	
+}
+@keyframes slide{
+	100%{
+		top: -240px;
+	}
+}
+.wrapper .auto_text li span:after{
+	content: '';
+	border-left: 2px solid red;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	background-color: #000;
+	animation-name: typing;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(18);
+
+}
+@keyframes typing{
+	100%{
+		left: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+.introduction .image_info{
+	background-image: url(../img/bg1.png);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: 250px;
+	background-position: top center;
+	padding-top:20px;
+}
+.introduction .image_info img{
+	height: 400px;
+	margin-top: 0px;
+}
