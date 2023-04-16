@@ -84,7 +84,7 @@ body{
 }
 .info{
 	height: 400px;
-	padding: 80px;
+	padding: 60px;
 }
 .info span{
 	color: #0afff4;
@@ -107,70 +107,78 @@ body{
 }
 .wrapper h3{
 	font-size: 3em;
-	font-family: 'Lobster', cursive;
 	font-weight: 900;
 	color: #F8EFBA;
+	font-family: 'Lobster', cursive;
+	
 }
 .wrapper .auto_text{
-	margin-top: 15px;
-	margin-left: 15px;
 	list-style: none;
 	padding: 0px;
-	height: 60px;
-	line-height: 60px;
-	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 15px;
+	height: 62px;
 	position: relative;
+	top: 0;
+	overflow: hidden;
 }
-
-.wrapper .auto_text li{	
-	padding: 0px;
-	height: 60px;
-	line-height: 60px;
+.wrapper .auto_text li{
 	position: relative;
 	top: 0;
 	animation-name: slide;
-	animation-duration: 8s;
+	animation-duration: 12s;
 	animation-iteration-count: infinite;
 	animation-timing-function: steps(4);
-	
-}
-.wrapper .auto_text li span{
-	font-size: 3em;
-	font-weight: 900;
-	font-family:'Lobster', cursive;
-	
 }
 @keyframes slide{
 	100%{
-		top: -240px;
+		top: -248px;
 	}
 }
-.wrapper .auto_text li span:after{
+.wrapper .auto_text span{
+	font-size: 3em;
+	font-weight: 900;
+	font-family:'Lobster', cursive;
+}
+.wrapper .auto_text span:after{
 	content: '';
-	border-left: 2px solid red;
 	height: 100%;
 	width: 100%;
+	border-left: 2px solid yellow;
 	position: absolute;
-	left: 0%;
+	left: 0;
 	background-color: #000;
 	animation-name: typing;
-	animation-duration: 2s;
+	animation-duration: 3s;
+	animation-timing-function: steps(17);
 	animation-iteration-count: infinite;
-	animation-timing-function: steps(18);
-
 }
 @keyframes typing{
 	100%{
 		left: 100%;
 	}
 }
-
-
-
-
-
-
-
+.btn{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	border:1px solid #ddd;
+	width: 100px;
+	padding: 8px 12px;
+	border-radius:25%;
+	margin-top: 20px;
+	transition: all ease .5s;
+}
+.btn a{
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+}
+.btn:hover{
+	background-color: blue;
+	border: none;
+}
 
 .introduction .image_info{
 	background-image: url(../img/bg1.png);
@@ -183,4 +191,104 @@ body{
 .introduction .image_info img{
 	height: 400px;
 	margin-top: 0px;
+}
+.nav_bar{
+	background-color: #5a5050;
+	padding: 0;
+	padding-bottom:0px;
+	height: 50px;
+	margin-top: 10px;
+}
+.nav_bar ul{
+	list-style: none;
+	padding: 0;
+	padding: 0px  350px;
+}
+.nav_bar ul li{
+	padding: 0;
+	display: inline-block;
+	padding: 13px 15px;
+	margin-right: 10px;
+	transition: all ease .8s;
+}
+.nav_bar ul li a{
+	color: #FFDEAD;
+	font-size: 1em;
+	text-decoration: none;
+	font-weight: 500;
+}
+.nav_bar ul li:hover{
+	background-color: #6F1E51;
+}
+.nav_bar ul li:hover a{
+	color: #fff;
+}
+.about{
+	padding: 0px;
+	background-image: linear-gradient(to right bottom, #fcd7ec, #ebd9ff, #bbe3ff, #6bf0ff, #00f9ff, #33f9f4, #4bf8e9, #5ff7de, #82f1e2, #a0eae3, #bbe3e1, #d3dbdb);
+	height: 600px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.about_img{
+	padding: 0px;
+	padding-top: 50px;
+}
+.about_img img{
+	height: 550px;
+}
+.about_info{
+	padding: 50px 80px;
+}
+.about_info h1{
+	font-size: 3.5em;
+	text-transform: capitalize;
+	font-family: 'Lobster', cursive; 
+	text-decoration: underline;
+	color: #6F1E51;
+
+}
+.about_info p{
+	margin-top: 35px;
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #283747;
+}
+.about_info ul{
+	margin-top: 30px;
+	list-style: none;
+	padding: 0px;
+}
+.about_info ul li{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-right: 20px;
+	color: #46082f;
+	font-weight: 700;
+	cursor: pointer;
+}
+.about_info ul li:hover{
+	text-decoration: underline;
+}
+.description{
+	display: none;
+	height: 300px;
+}
+.education{
+	height: 300px;
+	overflow: scroll;
+	margin-right: -80px;
+}
+.about_info dl{
+	margin-top: 15px;
+}
+.about_info dt{
+	color:#380195;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+.about_info dd{
+	color: #999797;
+	font-size: 1.2em;
+	font-weight: 400;
 }
